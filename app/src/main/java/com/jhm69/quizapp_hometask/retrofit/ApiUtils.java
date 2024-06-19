@@ -1,0 +1,1 @@
+package com.jhm69.quizapp_hometask.retrofit;public class ApiUtils {    public static final String BASE_URL = "https://the-trivia-api.com/api/";    public static QuestionService getQuestionService() {        return RetrofitClient.getClient(BASE_URL).create(QuestionService.class);    }}
